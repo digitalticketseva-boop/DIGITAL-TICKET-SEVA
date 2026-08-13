@@ -4,330 +4,295 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Digital Ticket Seva | Flight, Train, Bus & Hotel</title>
+<title>Digital Ticket Seva | Online Services</title>
+
+<meta name="description" content="Digital Ticket Seva - Flight, Train, Bus Ticket Booking, PAN Card, Passport, Driving Licence, Insurance, Recharge and Digital Services.">
 
 <style>
-*{box-sizing:border-box}
-
-body{
-  margin:0;
-  font-family:Arial,sans-serif;
-  background:#f5f8ff;
-  color:#172033;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f7fb;
+    color:#172033;
+    line-height:1.6;
+}
+
+/* HEADER */
 header{
-  background:linear-gradient(135deg,#0757c9,#08a8df);
-  color:white;
-  text-align:center;
-  padding:35px 15px;
+    background:linear-gradient(135deg,#0757c9,#063b8f);
+    color:white;
+    text-align:center;
+    padding:45px 20px;
+}
+
+.logo-box{
+    width:80px;
+    height:80px;
+    margin:auto;
+    background:white;
+    border-radius:20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#0757c9;
+    font-size:38px;
+    font-weight:bold;
+    box-shadow:0 8px 25px rgba(0,0,0,.25);
 }
 
 header h1{
-  margin:0;
-  font-size:34px;
+    font-size:38px;
+    margin-top:15px;
 }
 
 header p{
-  font-size:20px;
-  margin:12px 0 0;
+    font-size:18px;
+    margin-top:8px;
 }
 
+/* NAVIGATION */
 nav{
-  background:white;
-  padding:15px;
-  text-align:center;
-  position:sticky;
-  top:0;
-  z-index:10;
-  box-shadow:0 2px 8px #ddd;
+    background:white;
+    padding:15px;
+    text-align:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 3px 15px rgba(0,0,0,.12);
 }
 
 nav a{
-  color:#0757c9;
-  text-decoration:none;
-  font-weight:bold;
-  margin:0 15px;
+    display:inline-block;
+    color:#0757c9;
+    text-decoration:none;
+    font-weight:bold;
+    margin:5px 12px;
 }
 
+nav a:hover{
+    color:#f28c00;
+}
+
+/* HERO */
 .hero{
-  background:white;
-  text-align:center;
-  padding:50px 20px;
+    max-width:1100px;
+    margin:30px auto;
+    padding:50px 25px;
+    border-radius:25px;
+    background:linear-gradient(135deg,#ffffff,#eaf2ff);
+    text-align:center;
+    box-shadow:0 8px 30px rgba(0,0,0,.08);
 }
 
 .hero h2{
-  font-size:34px;
-  margin:0 0 15px;
+    font-size:34px;
+    color:#0757c9;
+    margin-bottom:15px;
 }
 
 .hero p{
-  font-size:20px;
-  color:#667085;
-  max-width:700px;
-  margin:15px auto 25px;
-  line-height:1.5;
+    font-size:18px;
+    max-width:750px;
+    margin:auto;
+}
+
+.buttons{
+    margin-top:25px;
 }
 
 .btn{
-  display:inline-block;
-  background:#08aa68;
-  color:white;
-  padding:15px 28px;
-  border-radius:10px;
-  text-decoration:none;
-  font-weight:bold;
-  font-size:18px;
-  margin:8px;
+    display:inline-block;
+    padding:13px 25px;
+    margin:7px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    background:#0757c9;
+    color:white;
+    box-shadow:0 5px 15px rgba(7,87,201,.25);
 }
 
-.section{
-  max-width:1100px;
-  margin:auto;
-  padding:45px 18px;
+.btn:hover{
+    background:#f28c00;
 }
 
-.section h2{
-  text-align:center;
-  color:#0757c9;
-  font-size:30px;
-  margin-bottom:30px;
+/* SECTION */
+section{
+    max-width:1100px;
+    margin:45px auto;
+    padding:0 20px;
 }
 
-.cards{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:20px;
+.section-title{
+    text-align:center;
+    color:#0757c9;
+    font-size:30px;
+    margin-bottom:25px;
+}
+
+/* SERVICE CARDS */
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
 }
 
 .card{
-  background:white;
-  padding:28px 20px;
-  border-radius:18px;
-  text-align:center;
-  box-shadow:0 5px 20px #dce4f2;
+    background:white;
+    padding:25px 18px;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 6px 20px rgba(0,0,0,.08);
+    transition:.3s;
+    border-top:4px solid #0757c9;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 12px 25px rgba(0,0,0,.13);
 }
 
 .icon{
-  font-size:48px;
+    font-size:42px;
+    margin-bottom:10px;
 }
 
 .card h3{
-  font-size:23px;
-  margin:12px 0;
+    color:#0757c9;
+    margin-bottom:8px;
 }
 
-.card p{
-  color:#667085;
-  line-height:1.5;
+/* ABOUT */
+.about{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 6px 20px rgba(0,0,0,.08);
+    text-align:center;
 }
 
-.contact{
-  background:#eaf4ff;
-  text-align:center;
-  padding:45px 20px;
+/* CONTACT */
+.contact-box{
+    background:linear-gradient(135deg,#0757c9,#063b8f);
+    color:white;
+    padding:35px 20px;
+    border-radius:22px;
+    text-align:center;
 }
 
-.contact h2{
-  color:#0757c9;
+.contact-box h2{
+    margin-bottom:15px;
 }
 
+.contact-box p{
+    margin:8px 0;
+    font-size:17px;
+}
+
+.contact-btn{
+    display:inline-block;
+    background:white;
+    color:#0757c9;
+    padding:12px 25px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    margin-top:15px;
+}
+
+/* FOOTER */
 footer{
-  background:#101828;
-  color:white;
-  text-align:center;
-  padding:25px 15px;
-  line-height:1.7;
+    background:#101828;
+    color:white;
+    text-align:center;
+    padding:25px 15px;
+    margin-top:50px;
 }
 
+footer p{
+    margin:5px;
+}
+
+/* MOBILE */
 @media(max-width:600px){
-  header h1{font-size:29px}
-  .hero h2{font-size:29px}
-  nav a{margin:0 7px}
+
+    header{
+        padding:35px 15px;
+    }
+
+    header h1{
+        font-size:28px;
+    }
+
+    header p{
+        font-size:15px;
+    }
+
+    .hero{
+        margin:20px 12px;
+        padding:35px 18px;
+    }
+
+    .hero h2{
+        font-size:27px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .section-title{
+        font-size:26px;
+    }
+
+    nav a{
+        margin:4px 7px;
+        font-size:14px;
+    }
+
 }
 </style>
 </head>
 
 <body>
 
-<header>
-  <h1>Digital Ticket Seva</h1>
-  <p>✈️ Flight • 🚆 Train • 🚌 Bus • 🏨 Hotel Booking</p>
+<header id="home">
+
+<div class="logo-box">
+DTS
+</div>
+
+<h1>Digital Ticket Seva</h1>
+
+<p>Your Trusted Digital Service Center</p>
+
 </header>
 
 <nav>
-  <a href="#services">Services</a>
-  <a href="#about">About</a>
-  <a href="#contact">Contact</a>
+
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+
 </nav>
 
-<section class="hero">
-  <h2>Your Travel, Our Service</h2>
-  <p>
-    Flight, train, bus and hotel booking assistance —
-    simple, fast and convenient.
-  </p>
+<div class="hero">
 
-  <a class="btn"
-     href="https://wa.me/919613722846?text=Hello%20Digital%20Ticket%20Seva,%20I%20want%20to%20book%20a%20ticket."
-     target="_blank">
-     📱 Book on WhatsApp
-  </a>
-</section>
+<h2>All Digital Services Under One Roof</h2>
 
-<section class="section" id="services">
-  <h2>Our Services</h2>
+<p>
+Flight, Train & Bus Ticket Booking, Government Documents,
+Banking Services, Recharge, Insurance and many more digital services.
+</p>
 
-  <div class="cards">
-
-    <div class="card">
-      <div class="icon">✈️</div>
-      <h3>Flight Booking</h3>
-      <p>Domestic and international flight booking assistance.</p>
-      <a class="btn"
-      href="https://wa.me/919613722846?text=I%20want%20Flight%20Booking"
-      target="_blank">Book Now</a>
-    </div>
-
-    <div class="card">
-      <div class="icon">🚆</div>
-      <h3>Train Booking</h3>
-      <p>Train ticket booking and travel assistance.</p>
-      <a class="btn"
-      href="https://wa.me/919613722846?text=I%20want%20Train%20Ticket%20Booking"
-      target="_blank">Book Now</a>
-    </div>
-
-    <div class="card">
-      <div class="icon">🚌</div>
-      <h3>Bus Booking</h3>
-      <p>Bus ticket booking assistance for your journey.</p>
-      <a class="btn"
-      href="https://wa.me/919613722846?text=I%20want%20Bus%20Ticket%20Booking"
-      target="_blank">Book Now</a>
-    </div>
-
-    <div class="card">
-      <div class="icon">🏨</div>
-      <h3>Hotel Booking</h3>
-      <p>Hotel booking assistance at your destination.</p>
-      <a class="btn"
-      href="https://wa.me/919613722846?text=I%20want%20Hotel%20Booking"
-      target="_blank">Book Now</a>
-    </div>
-
-    <div class="card">
-      <div class="icon">🏦</div>
-      <h3>Banking Services</h3>
-      <p>Axis Bank, FINO Bank and Airtel Bank services.</p>
-      <a class="btn"
-      href="https://wa.me/919613722846?text=I%20want%20Banking%20Service"
-      target="_blank">Enquire</a>
-    </div>
-
-    <div class="card">
-      <div class="icon">📱</div>
-      <h3>Recharge</h3>
-      <p>Mobile recharge and TV/DTH recharge services.</p>
-      <a class="btn"
-      href="https://wa.me/919613722846?text=I%20want%20Recharge%20Service"
-      target="_blank">Enquire</a>
-    </div>
-
-    <div class="card">
-      <div class="icon">🚗</div>
-      <h3>Vehicle Insurance</h3>
-      <p>Vehicle insurance assistance and renewal service.</p>
-      <a class="btn"
-      href="https://wa.me/919613722846?text=I%20want%20Vehicle%20Insurance"
-      target="_blank">Enquire</a>
-    </div>
-
-    <div class="card">
-      <div class="icon">🪪</div>
-      <h3>Driving Licence</h3>
-      <p>Driving licence application assistance.</p>
-      <a class="btn"
-      href="https://wa.me/919613722846?text=I%20want%20Driving%20Licence%20Service"
-      target="_blank">Apply</a>
-    </div>
-
-    <div class="card">
-      <div class="icon">🛂</div>
-      <h3>Passport</h3>
-      <p>Passport application assistance.</p>
-      <a class="btn"
-      href="https://wa.me/919613722846?text=I%20want%20Passport%20Service"
-      target="_blank">Apply</a>
-    </div>
-
-    <div class="card">
-      <div class="icon">📄</div>
-      <h3>PAN Card</h3>
-      <p>PAN card application and related assistance.</p>
-      <a class="btn"
-      href="https://wa.me/919613722846?text=I%20want%20PAN%20Card%20Service"
-      target="_blank">Apply</a>
-    </div>
-
-    <div class="card">
-      <div class="icon">🗳️</div>
-      <h3>Voter Card</h3>
-      <p>Voter card application assistance.</p>
-      <a class="btn"
-      href="https://wa.me/919613722846?text=I%20want%20Voter%20Card%20Service"
-      target="_blank">Apply</a>
-    </div>
-
-    <div class="card">
-      <div class="icon">💰</div>
-      <h3>Cash Withdrawal</h3>
-      <p>Cash withdrawal assistance available.</p>
-      <a class="btn"
-      href="https://wa.me/919613722846?text=I%20want%20Cash%20Withdrawal%20Service"
-      target="_blank">Enquire</a>
-    </div>
-
-    <div class="card">
-      <div class="icon">💸</div>
-      <h3>Money Transfer</h3>
-      <p>Money transfer assistance and related services.</p>
-      <a class="btn"
-      href="https://wa.me/919613722846?text=I%20want%20Money%20Transfer%20Service"
-      target="_blank">Enquire</a>
-    </div>
-
-  </div>
-</section>
-
-<section class="section" id="about">
-  <h2>About Digital Ticket Seva</h2>
-  <div class="card">
-    <p>
-      Digital Ticket Seva provides convenient travel booking
-      and digital service assistance from one place.
-      Contact us on WhatsApp for quick assistance.
-    </p>
-  </div>
-</section>
-
-<section class="contact" id="contact">
-  <h2>Contact Us</h2>
-
-  <p><strong>📱 WhatsApp:</strong> 9613722846</p>
-
-  <a class="btn"
-     href="https://wa.me/919613722846?text=Hello%20Digital%20Ticket%20Seva"
-     target="_blank">
-     💬 Chat on WhatsApp
-  </a>
-</section>
-
-<footer>
-  <strong>Digital Ticket Seva</strong><br>
-  Flight • Train • Bus • Hotel • Digital Services<br>
-  © 2026 Digital Ticket Seva
-</footer>
-
-</body>
-</html>
+<div class="buttons">
