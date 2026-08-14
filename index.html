@@ -1,264 +1,346 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Digital Ticket Seva | Online Services</title>
-
-<meta name="description" content="Digital Ticket Seva - Flight, Train, Bus Ticket Booking, PAN Card, Passport, Driving Licence, Insurance, Recharge and Digital Services.">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Digital Ticket Seva - Flight, Train, Bus booking, government documents, banking, recharge and insurance services in Morigaon, Assam.">
+<meta name="theme-color" content="#0757c9">
+<title>Digital Ticket Seva | Digital Services</title>
 
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
 body{
-    font-family:Arial, sans-serif;
-    background:#f4f7fb;
-    color:#172033;
-    line-height:1.6;
+font-family:Arial,sans-serif;
+background:#f3f7fc;
+color:#172033;
+line-height:1.6
 }
+a{text-decoration:none}
+.wrap{width:min(1120px,92%);margin:auto}
 
-/* HEADER */
 header{
-    background:linear-gradient(135deg,#0757c9,#063b8f);
-    color:white;
-    text-align:center;
-    padding:45px 20px;
+background:linear-gradient(135deg,#063b91,#0874df);
+color:white;
+padding:28px 0 55px
 }
 
-.logo-box{
-    width:80px;
-    height:80px;
-    margin:auto;
-    background:white;
-    border-radius:20px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    color:#0757c9;
-    font-size:38px;
-    font-weight:bold;
-    box-shadow:0 8px 25px rgba(0,0,0,.25);
+.logo{
+width:68px;
+height:68px;
+border-radius:18px;
+background:white;
+color:#0757c9;
+display:grid;
+place-items:center;
+font-weight:800;
+font-size:25px;
+box-shadow:0 10px 30px #0003
 }
 
-header h1{
-    font-size:38px;
-    margin-top:15px;
+h1{
+font-size:clamp(30px,6vw,48px);
+margin-top:22px
 }
 
-header p{
-    font-size:18px;
-    margin-top:8px;
+.tag{
+font-size:18px;
+opacity:.9
 }
 
-/* NAVIGATION */
-nav{
-    background:white;
-    padding:15px;
-    text-align:center;
-    position:sticky;
-    top:0;
-    z-index:1000;
-    box-shadow:0 3px 15px rgba(0,0,0,.12);
-}
+.hero{padding-top:24px}
 
-nav a{
-    display:inline-block;
-    color:#0757c9;
-    text-decoration:none;
-    font-weight:bold;
-    margin:5px 12px;
-}
-
-nav a:hover{
-    color:#f28c00;
-}
-
-/* HERO */
-.hero{
-    max-width:1100px;
-    margin:30px auto;
-    padding:50px 25px;
-    border-radius:25px;
-    background:linear-gradient(135deg,#ffffff,#eaf2ff);
-    text-align:center;
-    box-shadow:0 8px 30px rgba(0,0,0,.08);
+.badge{
+display:inline-block;
+padding:7px 13px;
+border-radius:99px;
+background:#ffffff20;
+border:1px solid #ffffff40;
+font-size:13px
 }
 
 .hero h2{
-    font-size:34px;
-    color:#0757c9;
-    margin-bottom:15px;
+font-size:clamp(30px,5vw,52px);
+line-height:1.12;
+margin-top:14px;
+max-width:800px
 }
 
 .hero p{
-    font-size:18px;
-    max-width:750px;
-    margin:auto;
+font-size:18px;
+max-width:760px;
+margin:15px 0 22px;
+opacity:.94
 }
 
-.buttons{
-    margin-top:25px;
+.btns{
+display:flex;
+flex-wrap:wrap;
+gap:12px
 }
 
 .btn{
-    display:inline-block;
-    padding:13px 25px;
-    margin:7px;
-    border-radius:30px;
-    text-decoration:none;
-    font-weight:bold;
-    background:#0757c9;
-    color:white;
-    box-shadow:0 5px 15px rgba(7,87,201,.25);
+padding:13px 20px;
+border-radius:12px;
+font-weight:700;
+display:inline-block
 }
 
-.btn:hover{
-    background:#f28c00;
+.light{
+background:white;
+color:#0757c9
 }
 
-/* SECTION */
-section{
-    max-width:1100px;
-    margin:45px auto;
-    padding:0 20px;
+.outline{
+color:white;
+border:1px solid #ffffff80;
+background:#ffffff12
 }
 
-.section-title{
-    text-align:center;
-    color:#0757c9;
-    font-size:30px;
-    margin-bottom:25px;
+nav{
+position:sticky;
+top:0;
+z-index:20;
+background:white;
+box-shadow:0 5px 20px #10234117
 }
 
-/* SERVICE CARDS */
-.services{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:20px;
+nav .wrap{
+display:flex;
+justify-content:center;
+overflow:auto
+}
+
+nav a{
+padding:14px;
+color:#0757c9;
+font-weight:700;
+white-space:nowrap
+}
+
+section{padding:65px 0}
+
+.intro{
+margin-top:-35px;
+position:relative
+}
+
+.introbox,.card,.info{
+background:white;
+border:1px solid #e3eaf4;
+box-shadow:0 10px 30px #152c4a0d;
+border-radius:22px
+}
+
+.introbox{
+text-align:center;
+padding:35px
+}
+
+.introbox h2,.title h2{
+color:#0757c9;
+font-size:clamp(27px,4vw,39px)
+}
+
+.introbox p{
+max-width:800px;
+margin:10px auto;
+color:#5c6778;
+font-size:17px
+}
+
+.title{
+text-align:center;
+margin-bottom:32px
+}
+
+.title span{
+color:#0757c9;
+font-weight:800;
+font-size:13px;
+text-transform:uppercase;
+letter-spacing:1.5px
+}
+
+.title p{
+max-width:680px;
+margin:8px auto;
+color:#687386
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:18px
 }
 
 .card{
-    background:white;
-    padding:25px 18px;
-    border-radius:18px;
-    text-align:center;
-    box-shadow:0 6px 20px rgba(0,0,0,.08);
-    transition:.3s;
-    border-top:4px solid #0757c9;
+padding:21px;
+transition:.2s
 }
 
 .card:hover{
-    transform:translateY(-6px);
-    box-shadow:0 12px 25px rgba(0,0,0,.13);
+transform:translateY(-4px)
 }
 
 .icon{
-    font-size:42px;
-    margin-bottom:10px;
+font-size:25px;
+width:48px;
+height:48px;
+border-radius:13px;
+background:#eaf3ff;
+display:grid;
+place-items:center;
+margin-bottom:12px
 }
 
 .card h3{
-    color:#0757c9;
-    margin-bottom:8px;
+font-size:18px;
+margin-bottom:6px
 }
 
-/* ABOUT */
-.about{
-    background:white;
-    padding:30px;
-    border-radius:20px;
-    box-shadow:0 6px 20px rgba(0,0,0,.08);
-    text-align:center;
+.card p{
+font-size:14px;
+color:#697386
 }
 
-/* CONTACT */
-.contact-box{
-    background:linear-gradient(135deg,#0757c9,#063b8f);
-    color:white;
-    padding:35px 20px;
-    border-radius:22px;
-    text-align:center;
+.cols{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:24px
 }
 
-.contact-box h2{
-    margin-bottom:15px;
+.info{
+padding:28px
 }
 
-.contact-box p{
-    margin:8px 0;
-    font-size:17px;
+.info h3{
+color:#0757c9;
+font-size:24px;
+margin-bottom:12px
 }
 
-.contact-btn{
-    display:inline-block;
-    background:white;
-    color:#0757c9;
-    padding:12px 25px;
-    border-radius:30px;
-    text-decoration:none;
-    font-weight:bold;
-    margin-top:15px;
+.checks{
+list-style:none;
+margin-top:14px;
+display:grid;
+gap:9px
 }
 
-/* FOOTER */
+.checks li:before{
+content:"✓";
+color:#0b8a4b;
+font-weight:800;
+margin-right:9px
+}
+
+.contact{
+display:grid;
+gap:13px;
+margin-top:15px
+}
+
+.contact div{
+padding:13px;
+background:#f6f9fd;
+border-radius:12px
+}
+
+.contact span{
+display:block;
+color:#697386;
+font-size:14px
+}
+
+.cta{
+background:linear-gradient(135deg,#063b91,#0874df);
+color:white;
+border-radius:25px;
+padding:40px;
+text-align:center
+}
+
+.cta h2{
+font-size:clamp(27px,4vw,38px)
+}
+
+.cta p{
+max-width:700px;
+margin:8px auto 20px
+}
+
 footer{
-    background:#101828;
-    color:white;
-    text-align:center;
-    padding:25px 15px;
-    margin-top:50px;
+background:#071a35;
+color:#c9d7e9;
+padding:40px 0 22px
 }
 
-footer p{
-    margin:5px;
+.foot{
+display:grid;
+grid-template-columns:1.4fr 1fr 1fr;
+gap:25px
 }
 
-/* MOBILE */
-@media(max-width:600px){
+.foot h3{
+color:white;
+margin-bottom:8px
+}
 
-    header{
-        padding:35px 15px;
-    }
+.foot p,.foot li{
+font-size:14px
+}
 
-    header h1{
-        font-size:28px;
-    }
+.foot ul{
+list-style:none;
+display:grid;
+gap:5px
+}
 
-    header p{
-        font-size:15px;
-    }
+.copy{
+text-align:center;
+border-top:1px solid #ffffff18;
+margin-top:25px;
+padding-top:17px;
+font-size:13px
+}
 
-    .hero{
-        margin:20px 12px;
-        padding:35px 18px;
-    }
+@media(max-width:900px){
+.grid{
+grid-template-columns:repeat(2,1fr)
+}
+.cols,.foot{
+grid-template-columns:1fr
+}
+}
 
-    .hero h2{
-        font-size:27px;
-    }
+@media(max-width:560px){
+header{
+padding-bottom:42px
+}
 
-    .hero p{
-        font-size:16px;
-    }
+.grid{
+grid-template-columns:1fr
+}
 
-    .section-title{
-        font-size:26px;
-    }
+section{
+padding:50px 0
+}
 
-    nav a{
-        margin:4px 7px;
-        font-size:14px;
-    }
+.introbox{
+padding:26px 18px
+}
 
+.hero p{
+font-size:16px
+}
+
+.foot{
+grid-template-columns:1fr
+}
+
+.cta{
+padding:30px 20px
+}
 }
 </style>
 </head>
@@ -266,33 +348,458 @@ footer p{
 <body>
 
 <header id="home">
+<div class="wrap">
 
-<div class="logo-box">
-DTS
-</div>
+<div class="logo">DTS</div>
 
 <h1>Digital Ticket Seva</h1>
 
-<p>Your Trusted Digital Service Center</p>
-
-</header>
-
-<nav>
-
-<a href="#home">Home</a>
-<a href="#services">Services</a>
-<a href="#about">About</a>
-<a href="#contact">Contact</a>
-
-</nav>
+<div class="tag">
+Your Trusted Digital Service Center
+</div>
 
 <div class="hero">
 
-<h2>All Digital Services Under One Roof</h2>
+<span class="badge">
+DIGITAL SERVICE CENTER • MORIGAON, ASSAM
+</span>
+
+<h2>
+All your essential digital services in one place.
+</h2>
 
 <p>
-Flight, Train & Bus Ticket Booking, Government Documents,
-Banking Services, Recharge, Insurance and many more digital services.
+Flight, train and bus ticket booking, government documents,
+banking services, recharge, insurance and many more services.
 </p>
 
-<div class="buttons">
+<div class="btns">
+
+<a class="btn light" href="#services">
+Explore Services
+</a>
+
+<a class="btn outline" href="#contact">
+Contact Us
+</a>
+
+</div>
+
+</div>
+</div>
+</header>
+
+
+<nav>
+<div class="wrap">
+
+<a href="#home">Home</a>
+
+<a href="#services">Services</a>
+
+<a href="#about">About</a>
+
+<a href="#contact">Contact</a>
+
+</div>
+</nav>
+
+
+<main>
+
+<section class="intro">
+
+<div class="wrap">
+
+<div class="introbox">
+
+<h2>
+All Digital Services Under One Roof
+</h2>
+
+<p>
+Convenient assistance for travel bookings, online applications,
+banking, recharge, insurance and everyday digital needs.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="services">
+
+<div class="wrap">
+
+<div class="title">
+
+<span>Our Services</span>
+
+<h2>
+What We Can Help You With
+</h2>
+
+<p>
+Professional digital assistance for local customers.
+</p>
+
+</div>
+
+
+<div class="grid">
+
+
+<div class="card">
+<div class="icon">✈️</div>
+<h3>Flight Ticket</h3>
+<p>Flight ticket booking assistance.</p>
+</div>
+
+
+<div class="card">
+<div class="icon">🚆</div>
+<h3>Train Ticket</h3>
+<p>Train ticket booking assistance.</p>
+</div>
+
+
+<div class="card">
+<div class="icon">🚌</div>
+<h3>Bus Ticket</h3>
+<p>Bus ticket booking assistance.</p>
+</div>
+
+
+<div class="card">
+<div class="icon">🪪</div>
+<h3>PAN Card</h3>
+<p>PAN application assistance.</p>
+</div>
+
+
+<div class="card">
+<div class="icon">🗳️</div>
+<h3>Voter Card</h3>
+<p>Voter card online services.</p>
+</div>
+
+
+<div class="card">
+<div class="icon">🚘</div>
+<h3>Driving Licence</h3>
+<p>Licence application assistance.</p>
+</div>
+
+
+<div class="card">
+<div class="icon">📘</div>
+<h3>Passport</h3>
+<p>Passport application assistance.</p>
+</div>
+
+
+<div class="card">
+<div class="icon">📄</div>
+<h3>Government Services</h3>
+<p>Online forms and documents.</p>
+</div>
+
+
+<div class="card">
+<div class="icon">🏦</div>
+<h3>Banking Services</h3>
+<p>Digital banking assistance.</p>
+</div>
+
+
+<div class="card">
+<div class="icon">💰</div>
+<h3>Cash Withdrawal</h3>
+<p>Available digital withdrawal services.</p>
+</div>
+
+
+<div class="card">
+<div class="icon">💸</div>
+<h3>Money Transfer</h3>
+<p>Money transfer assistance.</p>
+</div>
+
+
+<div class="card">
+<div class="icon">📱</div>
+<h3>Mobile Recharge</h3>
+<p>Quick mobile recharge service.</p>
+</div>
+
+
+<div class="card">
+<div class="icon">📺</div>
+<h3>TV Recharge</h3>
+<p>DTH recharge assistance.</p>
+</div>
+
+
+<div class="card">
+<div class="icon">🛡️</div>
+<h3>Vehicle Insurance</h3>
+<p>Insurance and renewal assistance.</p>
+</div>
+
+
+<div class="card">
+<div class="icon">💼</div>
+<h3>Other Digital Services</h3>
+<p>Ask us about available services.</p>
+</div>
+
+
+<div class="card">
+<div class="icon">🤝</div>
+<h3>Customer Assistance</h3>
+<p>Help with online digital work.</p>
+</div>
+
+
+</div>
+</div>
+</section>
+
+
+<section id="about">
+
+<div class="wrap">
+
+<div class="title">
+
+<span>About Us</span>
+
+<h2>
+Digital Ticket Seva
+</h2>
+
+</div>
+
+
+<div class="cols">
+
+
+<div class="info">
+
+<h3>
+Your Local Digital Service Partner
+</h3>
+
+<p>
+Digital Ticket Seva provides convenient digital assistance
+from one place for travel bookings, online applications,
+banking-related services, recharge, insurance and other
+everyday digital needs.
+</p>
+
+<ul class="checks">
+
+<li>Convenient local service</li>
+
+<li>Multiple services under one roof</li>
+
+<li>Customer-focused assistance</li>
+
+<li>Simple and professional process</li>
+
+</ul>
+
+</div>
+
+
+<div class="info">
+
+<h3>
+Our Service Area
+</h3>
+
+<p>
+Serving customers around Kalikajari, Nagabandha and nearby
+areas of Morigaon, Assam.
+</p>
+
+
+<div class="contact">
+
+<div>
+📍 <b>Address</b>
+<span>
+Village Kalikajari, Nagabandha,
+Dist. Morigaon, Assam
+</span>
+</div>
+
+
+<div>
+📞 <b>Phone / WhatsApp</b>
+<span>
+9613722846
+</span>
+</div>
+
+
+<div>
+🕘 <b>Working Hours</b>
+<span>
+Contact us for current availability.
+</span>
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="contact">
+
+<div class="wrap">
+
+<div class="cta">
+
+<h2>
+Need a Digital Service?
+</h2>
+
+<p>
+Visit Digital Ticket Seva for ticket booking,
+online applications, banking assistance, recharge,
+insurance and more.
+</p>
+
+
+<div class="btns" style="justify-content:center">
+
+
+<a class="btn light" href="#services">
+View Services
+</a>
+
+
+<a class="btn outline" href="tel:+919613722846">
+📞 Call: 9613722846
+</a>
+
+
+<a class="btn light"
+target="_blank"
+href="https://wa.me/919613722846?text=Hello%20Digital%20Ticket%20Seva%2C%20mujhe%20digital%20service%20ke%20baare%20mein%20jankari%20chahiye.">
+💬 WhatsApp
+</a>
+
+
+<a class="btn outline"
+target="_blank"
+href="https://www.google.com/maps/search/?api=1&query=Kalikajari%2C%20Nagabandha%2C%20Morigaon%2C%20Assam">
+📍 Find Location
+</a>
+
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+<div class="wrap foot">
+
+
+<div>
+
+<h3>
+Digital Ticket Seva
+</h3>
+
+<p>
+Your Trusted Digital Service Center for travel,
+government, banking and other digital services.
+</p>
+
+</div>
+
+
+<div>
+
+<h3>
+Quick Links
+</h3>
+
+<ul>
+
+<li>
+<a href="#home" style="color:inherit">
+Home
+</a>
+</li>
+
+<li>
+<a href="#services" style="color:inherit">
+Services
+</a>
+</li>
+
+<li>
+<a href="#about" style="color:inherit">
+About
+</a>
+</li>
+
+<li>
+<a href="#contact" style="color:inherit">
+Contact
+</a>
+</li>
+
+</ul>
+
+</div>
+
+
+<div>
+
+<h3>
+Location
+</h3>
+
+<p>
+Kalikajari, Nagabandha<br>
+Morigaon, Assam
+</p>
+
+</div>
+
+
+</div>
+
+
+<div class="wrap copy">
+
+© 2026 Digital Ticket Seva. All rights reserved.
+
+</div>
+
+</footer>
+
+
+</body>
+</html>
