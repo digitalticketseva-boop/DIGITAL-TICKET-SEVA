@@ -1,158 +1,441 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Digital Ticket Seva - Flight, Train, Bus, Banking, Recharge, Insurance and Government Digital Services.">
-  <meta name="theme-color" content="#0757c9">
-  <title>Digital Ticket Seva | Trusted Digital Service Center</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Digital Ticket Seva - Flight, Train, Bus Booking and Digital Services">
+
+<title>Digital Ticket Seva | Trusted Digital Service Partner</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Arial, sans-serif;
+  background:#f5f8fc;
+  color:#172033;
+  line-height:1.6;
+}
+
+header{
+  background:#ffffff;
+  box-shadow:0 3px 15px rgba(0,0,0,.08);
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+.topbar{
+  background:#0757c9;
+  color:white;
+  text-align:center;
+  padding:8px;
+  font-size:14px;
+}
+
+.navbar{
+  max-width:1150px;
+  margin:auto;
+  padding:12px 20px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+
+.logo{
+  height:65px;
+  max-width:280px;
+  object-fit:contain;
+}
+
+nav{
+  display:flex;
+  gap:22px;
+  align-items:center;
+}
+
+nav a{
+  text-decoration:none;
+  color:#172033;
+  font-weight:bold;
+}
+
+nav a:hover{
+  color:#0757c9;
+}
+
+.contact-btn{
+  background:#0757c9;
+  color:white!important;
+  padding:10px 18px;
+  border-radius:25px;
+}
+
+.hero{
+  background:linear-gradient(135deg,#0757c9,#00a8ff);
+  color:white;
+  padding:80px 20px;
+  text-align:center;
+}
+
+.hero h1{
+  font-size:45px;
+  margin-bottom:15px;
+}
+
+.hero p{
+  font-size:19px;
+  max-width:750px;
+  margin:0 auto 30px;
+}
+
+.btn{
+  display:inline-block;
+  padding:13px 25px;
+  margin:6px;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.btn-white{
+  background:white;
+  color:#0757c9;
+}
+
+.btn-outline{
+  border:2px solid white;
+  color:white;
+}
+
+.section{
+  max-width:1150px;
+  margin:auto;
+  padding:65px 20px;
+}
+
+.section-title{
+  text-align:center;
+  margin-bottom:40px;
+}
+
+.section-title h2{
+  color:#0757c9;
+  font-size:32px;
+}
+
+.services{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:white;
+  padding:28px 20px;
+  border-radius:18px;
+  text-align:center;
+  box-shadow:0 5px 20px rgba(0,0,0,.08);
+  transition:.3s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+}
+
+.icon{
+  font-size:42px;
+  margin-bottom:10px;
+}
+
+.card h3{
+  color:#0757c9;
+  margin-bottom:8px;
+}
+
+.about{
+  background:white;
+}
+
+.about-box{
+  max-width:850px;
+  margin:auto;
+  text-align:center;
+  font-size:17px;
+}
+
+.contact{
+  background:#eef5ff;
+}
+
+.contact-box{
+  max-width:750px;
+  margin:auto;
+  background:white;
+  padding:35px 25px;
+  border-radius:20px;
+  text-align:center;
+  box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.contact-box p{
+  margin:10px 0;
+}
+
+footer{
+  background:#092b61;
+  color:white;
+  text-align:center;
+  padding:25px 15px;
+}
+
+footer strong{
+  color:#5db8ff;
+}
+
+@media(max-width:750px){
+
+  .navbar{
+    flex-direction:column;
+  }
+
+  nav{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:12px;
+  }
+
+  .logo{
+    height:55px;
+  }
+
+  .hero{
+    padding:60px 15px;
+  }
+
+  .hero h1{
+    font-size:32px;
+  }
+
+  .hero p{
+    font-size:16px;
+  }
+
+  .section{
+    padding:50px 15px;
+  }
+}
+</style>
 </head>
+
 <body>
 
-  <div class="topbar">
-    <div>Digital Services &nbsp;|&nbsp; Travel Booking &nbsp;|&nbsp; Banking &nbsp;|&nbsp; Insurance &nbsp;|&nbsp; Government Services</div>
-    <div>Follow Us: <span class="social">● &nbsp;● &nbsp;● &nbsp;●</span></div>
-  </div>
+<div class="topbar">
+  ✈️ Flight Booking &nbsp; | &nbsp; 🚆 Train Booking &nbsp; | &nbsp; 🚌 Bus Booking &nbsp; | &nbsp; 💻 Digital Services
+</div>
 
-  <header class="site-header">
-    <a class="brand" href="#home">
-      <img src="Logo.png" alt="DTS - Digital Ticket Seva">
-    </a>
+<header>
 
-    <nav>
-      <a class="active" href="#home">Home</a>
-      <a href="#services">Services</a>
-      <a href="#about">About Us</a>
-      <a href="#contact">Contact</a>
-      <a class="nav-btn" href="#contact">💬 Contact Us</a>
-    </nav>
-  </header>
+<div class="navbar">
 
-  <main>
-    <section id="home" class="hero">
-      <div class="hero-glow glow-one"></div>
-      <div class="hero-glow glow-two"></div>
-      <div class="hero-grid"></div>
+<a href="#home">
+<img src="Logo.png" class="logo" alt="Digital Ticket Seva">
+</a>
 
-      <div class="hero-content">
-        <span class="eyebrow">● DIGITAL SERVICE CENTER</span>
-        <h1>All Your Essential<br><span>Digital Services</span><br>in One Place</h1>
-        <p>Flight, Train, Bus booking, Government services, Banking, Recharges, Insurance and much more.</p>
-        <div class="hero-actions">
-          <a class="btn primary" href="#services">Explore Services</a>
-          <a class="btn outline" href="#contact">☎ Contact Us</a>
-        </div>
-      </div>
+<nav>
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#about">About Us</a>
+<a href="#contact">Contact</a>
+<a href="#contact" class="contact-btn">💬 Contact</a>
+</nav>
 
-      <div class="travel-art" aria-label="Travel services">
-        <div class="plane">✈</div>
-        <div class="travel-card flight">✈ Flight<br><small>Ticket</small></div>
-        <div class="train">🚄</div>
-        <div class="bus">🚌</div>
-        <div class="travel-card train-card">🚆 Train<br><small>Ticket</small></div>
-        <div class="travel-card bus-card">🚌 Bus<br><small>Ticket</small></div>
-      </div>
-    </section>
+</div>
 
-    <section id="services" class="services section">
-      <div class="section-heading">
-        <span>— OUR SERVICES —</span>
-        <h2>What We Can Help You With</h2>
-        <p>Wide range of digital services for your everyday needs</p>
-      </div>
+</header>
 
-      <div class="service-grid">
-        <article class="service-card"><div class="icon">✈️</div><h3>Flight Ticket</h3><p>Domestic & International Flight Booking</p></article>
-        <article class="service-card"><div class="icon">🚆</div><h3>Train Ticket</h3><p>IRCTC Authorized Train Booking</p></article>
-        <article class="service-card"><div class="icon">🚌</div><h3>Bus Ticket</h3><p>AC / Non-AC Bus Booking</p></article>
-        <article class="service-card"><div class="icon">🏦</div><h3>Axis Bank</h3><p>Account Opening Services</p></article>
-        <article class="service-card"><div class="icon">💳</div><h3>FINO Bank</h3><p>FINO Bank Account Opening</p></article>
-        <article class="service-card"><div class="icon">📱</div><h3>Airtel Bank</h3><p>Airtel Payments Bank Account</p></article>
 
-        <article class="service-card"><div class="icon">📺</div><h3>TV Recharge</h3><p>DTH & Cable TV Recharge</p></article>
-        <article class="service-card"><div class="icon">📲</div><h3>Mobile Recharge</h3><p>Prepaid & Postpaid Recharge</p></article>
-        <article class="service-card"><div class="icon">🛡️</div><h3>Vehicle Insurance</h3><p>Two Wheeler & Four Wheeler Insurance</p></article>
-        <article class="service-card"><div class="icon">🪪</div><h3>Driving Licence</h3><p>Apply for New Driving Licence</p></article>
-        <article class="service-card"><div class="icon">🛂</div><h3>Passport</h3><p>Apply for New Passport</p></article>
-        <article class="service-card"><div class="icon">🧾</div><h3>PAN Card</h3><p>Apply for New PAN Card</p></article>
+<section id="home" class="hero">
 
-        <article class="service-card"><div class="icon">🗳️</div><h3>Voter Card</h3><p>Apply for New Voter Card</p></article>
-        <article class="service-card"><div class="icon">💵</div><h3>Cash Withdrawal</h3><p>AEPS Cash Withdrawal</p></article>
-        <article class="service-card"><div class="icon">💸</div><h3>Money Transfer</h3><p>Money Transfer Services</p></article>
-      </div>
-    </section>
+<h1>All Your Essential Services in One Place</h1>
 
-    <section id="about" class="about section">
-      <div class="about-card">
-        <div>
-          <span class="mini-title">ABOUT US —</span>
-          <h2>Your Trusted Digital<br>Service Partner</h2>
-          <p>Digital Ticket Seva is a one-stop digital service center committed to providing fast, secure and reliable services to our customers.</p>
-        </div>
-        <img src="Logo.png" alt="Digital Ticket Seva logo">
-      </div>
+<p>
+Digital Ticket Seva provides reliable ticket booking and digital services
+for your everyday needs.
+</p>
 
-      <div class="about-card why">
-        <div>
-          <span class="mini-title">WHY CHOOSE US —</span>
-          <h2>Service You Can Trust</h2>
-          <ul>
-            <li>✓ Trusted & Verified Services</li>
-            <li>✓ Fast & Secure Transactions</li>
-            <li>✓ Customer First Approach</li>
-            <li>✓ Best Service in Your Area</li>
-          </ul>
-        </div>
-        <div class="shield">✓</div>
-      </div>
-    </section>
+<a href="#services" class="btn btn-white">View Services</a>
 
-    <section class="help-banner">
-      <div class="headset">◉</div>
-      <div>
-        <h2>Need Any Help?</h2>
-        <p>We are always here to help you with the best services.</p>
-      </div>
-      <a href="#contact" class="help-btn">💬 Contact Us on WhatsApp</a>
-    </section>
+<a href="#contact" class="btn btn-outline">Contact Us</a>
 
-    <section id="contact" class="contact section">
-      <div class="section-heading">
-        <span>— CONTACT US —</span>
-        <h2>Digital Ticket Seva</h2>
-        <p>Visit us for reliable digital services.</p>
-      </div>
-      <div class="contact-box">
-        <div><strong>📍 Address</strong><br>Village Kalikajari, Nagabandha<br>Dist. Morigaon, Assam</div>
-        <div><strong>💬 WhatsApp</strong><br>Available on Website</div>
-        <div><strong>🕘 Service</strong><br>Fast & Customer Friendly</div>
-      </div>
-    </section>
-  </main>
+</section>
 
-  <footer>
-    <div class="footer-main">
-      <div class="footer-brand">
-        <img src="Logo.png" alt="DTS">
-        <p>All your essential digital services in one place.</p>
-      </div>
-      <div>
-        <h3>Quick Links</h3>
-        <a href="#home">Home</a><a href="#services">Services</a><a href="#about">About Us</a><a href="#contact">Contact Us</a>
-      </div>
-      <div>
-        <h3>Our Services</h3>
-        <a href="#services">Flight, Train, Bus Ticket</a><a href="#services">Banking Services</a><a href="#services">Recharges</a><a href="#services">Insurance & Documents</a>
-      </div>
-      <div>
-        <h3>Contact Us</h3>
-        <p>📍 Village Kalikajari, Nagabandha<br>Dist. Morigaon, Assam</p>
-        <p>💬 WhatsApp: Available on Website</p>
-      </div>
-    </div>
-    <div class="copyright">© 2026 Digital Ticket Seva. All Rights Reserved.</div>
-  </footer>
+
+<section id="services" class="section">
+
+<div class="section-title">
+<h2>Our Services</h2>
+<p>Simple, Fast & Reliable Digital Services</p>
+</div>
+
+<div class="services">
+
+<div class="card">
+<div class="icon">✈️</div>
+<h3>Flight Booking</h3>
+<p>Domestic and international flight ticket booking assistance.</p>
+</div>
+
+<div class="card">
+<div class="icon">🚆</div>
+<h3>Train Booking</h3>
+<p>Train ticket booking and related railway services.</p>
+</div>
+
+<div class="card">
+<div class="icon">🚌</div>
+<h3>Bus Booking</h3>
+<p>Convenient bus ticket booking services.</p>
+</div>
+
+<div class="card">
+<div class="icon">🏦</div>
+<h3>Banking Services</h3>
+<p>Axis Bank, FINO Bank and Airtel Bank related services.</p>
+</div>
+
+<div class="card">
+<div class="icon">📱</div>
+<h3>Recharge</h3>
+<p>Mobile recharge and TV/DTH recharge services.</p>
+</div>
+
+<div class="card">
+<div class="icon">🚗</div>
+<h3>Vehicle Insurance</h3>
+<p>Vehicle insurance related assistance and services.</p>
+</div>
+
+<div class="card">
+<div class="icon">🪪</div>
+<h3>Driving Licence</h3>
+<p>Driving licence application assistance.</p>
+</div>
+
+<div class="card">
+<div class="icon">🛂</div>
+<h3>Passport</h3>
+<p>Passport application assistance.</p>
+</div>
+
+<div class="card">
+<div class="icon">💳</div>
+<h3>PAN Card</h3>
+<p>PAN card application and related services.</p>
+</div>
+
+<div class="card">
+<div class="icon">🗳️</div>
+<h3>Voter Card</h3>
+<p>Voter card related application services.</p>
+</div>
+
+<div class="card">
+<div class="icon">💰</div>
+<h3>Cash Withdrawal</h3>
+<p>Cash withdrawal and banking assistance.</p>
+</div>
+
+<div class="card">
+<div class="icon">💸</div>
+<h3>Money Transfer</h3>
+<p>Domestic money transfer services.</p>
+</div>
+
+</div>
+</section>
+
+
+<section id="about" class="about">
+
+<div class="section">
+
+<div class="section-title">
+<h2>About Digital Ticket Seva</h2>
+</div>
+
+<div class="about-box">
+
+<p>
+<strong>Digital Ticket Seva</strong> is your trusted local digital service
+partner. We provide ticket booking, banking assistance, recharge,
+insurance and various government/digital application services under one roof.
+</p>
+
+<br>
+
+<p>
+Our goal is to make digital services simple, convenient and accessible
+for everyone.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="contact" class="contact">
+
+<div class="section">
+
+<div class="section-title">
+<h2>Contact Us</h2>
+<p>Visit us for reliable digital services</p>
+</div>
+
+<div class="contact-box">
+
+<h2>Digital Ticket Seva</h2>
+
+<p>📍 Village Kalikajari, Nagabandha</p>
+
+<p>📍 District Morigaon, Assam</p>
+
+<p>💻 Flight • Train • Bus • Digital Services</p>
+
+<br>
+
+<a href="#home" class="btn contact-btn">
+⬆️ Back to Home
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<p>
+© 2026 <strong>Digital Ticket Seva</strong>
+</p>
+
+<p>
+Your Trusted Digital Service Partner
+</p>
+
+</footer>
 
 </body>
 </html>
